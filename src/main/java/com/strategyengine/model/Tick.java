@@ -17,4 +17,10 @@ public class Tick {
     public double getPrice() { return price; }
     public double getVolume() { return volume; }
     public long getTimestamp() { return timestamp; }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %.2f @ %d (Vol: %.2f)", symbol, price, timestamp, volume);
+    }
+
 }
